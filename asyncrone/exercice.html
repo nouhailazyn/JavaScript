@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function executerAvecLimite() {
+            let resultat = [];  
+            let temps = 0; 
+
+            function creerTache(num) {
+                let delayAl = Math.floor(Math.random() * 901) + 100; //chacune avec un délai aléatoire entre 100 et 1000 ms
+
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        if (delayAl < 700) {
+                            resolve("Tâche " + num + " réussie : " + delayAl + "ms");
+                        } else {//rejette une chaîne d’erreur si son délai dépasse 700 ms
+                            reject("Tâche " + num + " échouée : " + delayAl + "ms");
+                        }
+                    }, delayAl);
+                });
+            }
+
+            function afficher(index) {
+                if (index > 5 || temps > 2500) {
+                    console.log("Fin de l'exécution. Résultats finaux :", resultat);
+                    return; // si on dépasse 5 tâches ou 2500ms en arrête l'execition
+                }
+
+                let start = Date.now(); // Temps de début de la tâche
+                    creerTache(index)
+                        .then(resultat => {
+                            resultat.push(resultat);
+                        })
+                        .catch(error => {
+                            console.log(error);
+                        })
+                        .finally(() => {
+                            temps += Date.now() - start;
+                            afficher(index + 1); // Passe à la tâche suivante
+                        });
+            }
+
+            afficher();
+        }
+
+        executerAvecLimite();
+
+    </script>
+
+</body>
+</html>

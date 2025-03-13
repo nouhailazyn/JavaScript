@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonction </title>
+    <!-- <style>
+        button{
+            padding: 5px;
+            width: 125px;
+            border: 1px solid dark;
+            background-color: #202546;
+            font-size: 15px;
+            color: white;
+        }
+        input{
+            padding: 5px;
+            width: 150px;
+            border: 1px solid dark;
+        }
+        label{
+            font-size: 20px;
+        }
+    </style> -->
+</head>
+<body>
+<!--     
+    <script>
+        //Exercice 3
+        var fonction1 = (x) => x + 5;
+        var fonction2 = (x, y) => x + y;
+        var fonction0 = () => {
+            var nombre = parseFloat(prompt("Entrez un nombre :"));
+            return nombre + 2;
+        };
+        console.log("fonction1(5) : " + fonction1(5)); 
+        console.log("fonction2(3, 4) : " + fonction2(3, 4));
+        console.log("fonction0() : " + fonction0());
+    </script>
+
+    <script>
+         //Exercice 4
+        function addition(a, b) {
+            return a + b;
+        }
+        console.log(addition(5, 10));
+    </script>
+
+    <script>
+        //Exercice 5
+        function minuteToSecond(minute) {
+            return minute * 60;
+        }
+        console.log("convertit en seconde est " + minuteToSecond(4)); 
+        console.log("convertit en seconde est " + minuteToSecond(3)); 
+    </script>
+
+    <script>
+        //Exercice 6
+        function  increment(inc){
+            return inc +1;
+        }
+        console.log(increment(10));
+        console.log(increment(4));
+    </script>
+
+    <script>
+        //Exercice 7 method 1
+        function  strReverse(chaine){
+            return chaine.split("").reverse().join("");
+        }
+        console.log(strReverse("WayToLearnX"));
+    </script>
+
+    <h4>Exercice 7  inverser une chaîne de caractères (split(), reverse(), join()). method 2</h4>
+    <input type="text" name="chaine" id="chaine"/>
+    <button onclick="strReverse()">Inverser</button>
+    <br>
+    <label id="resultat"></label>
+    <script>
+        function  strReverse(){
+            var chaine = document.getElementById("chaine").value;
+            resultat = chaine.split("").reverse().join("");
+            document.getElementById("resultat").innerText = "Reverse est :" + resultat;
+        }
+    </script>
+
+    <h4>Exercice 8 : trouver le plus grand des trois entiers donnés</h4>
+    <button onclick="alert(getMax(12,14,18))">Plus grand</button>
+    <script>
+        function getMax(a,b,c){
+            return Math.max(a,b,c);
+        }
+    </script>
+
+    <h4>Exercice 9</h4>
+    <button onclick="alert(getFirst([1, 2, 3]))">Premier élément</button>
+    <script>
+        function getFirst(tab){
+            return tab[0];
+        }
+    </script>
+
+    <h4>Exercice 10</h4>
+    <button onclick="alert(resteDiv(1, 3))">reste division</button>
+    <script>
+        function resteDiv(j, k){
+            return j % k;
+        }
+    </script>
+    <br><br>
+    <input type="text" name="n" id="n"/>&nbsp;&nbsp;
+    <input type="text" name="v" id="v"/>&nbsp;
+    <button onclick="resteDiv()">Reste</button>
+    <br>
+    <label id="reste"></label>
+    <script>
+        function  resteDiv(){
+            var n = document.getElementById("n").value;
+            var v = document.getElementById("v").value;
+            reste = n % v;
+            document.getElementById("reste").innerText = "Reste est :" + reste;
+        }
+    </script> -->
+    <!-- <p>Wait 3 seconds (3000 miliseconds) for this page to change.</p>
+    <h1 id="demo"></h1>
+    <script>
+        setTimeout(myFunction, 3000); // 3000 = miliseconds
+        function myFunction(){
+            document.getElementById("demo").innerHTML= "Welcome !";
+        }
+    </script>
+
+    
+    <script>
+        setTimeout(function(){
+            myfunction("Hello in my world !");
+            3000
+        }
+    )
+    </script> -->
+    <!-- <script>
+        const second = () =>{
+            console.log('how are you doing ?');
+        };
+        const first = () =>{
+            console.log('hey there !');
+            second();
+            console.log('the end');
+        };
+        first();
+    </script> -->
+
+    <!-- <script>
+        const second = () =>{
+            setTimeout(() => {
+                console.log('Async hey there');
+                }, 2000);
+        };
+        const first = () =>{
+            console.log('hey there !');
+            second();
+            console.log('the end');
+        };
+        first();
+    </script> -->
+
+    <!-- <h1 id="Date"></h1> 
+    <script>
+        var = new date ;
+        const date = () =>{
+            setTimeout(() => {
+                console.log(getHours + ':' + getMinuts + ':' + getSeconds);
+                // document.getElementById("Date").innerHTML= "Date est :" + getHours + getMinuts + getSeconds;
+                }, 2000);
+        };
+        date();
+    </script>-->
+
+    <!-- <script>
+        function getCurrentTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0'); // Format to two digits
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            
+            return `${hours}:${minutes}:${seconds}`;
+        }
+
+        console.log(getCurrentTime()); // Example output: "14:30:15"
+
+    </script> -->
+
+    <script>
+        mesclients= ["Jean", "Paul", "Pierre"];
+        mesClients.forEach(function(nom){
+            console.log("Bonjour "+ nom);})
+    </script>
+
+    <h1 id="result"></h1>
+    <script>
+        setInterval(myCallBack, 3000); // 3000 = miliseconds
+        function myCallBack(){
+            document.getElementById("result").innerHTML= "Hello in my world !";
+        }
+    </script>
+</body>
+</html>

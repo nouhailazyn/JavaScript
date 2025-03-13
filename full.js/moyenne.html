@@ -1,0 +1,45 @@
+<h2>Exercice 1 : Calcul d'une moyenne</h2>
+    <script>
+let somme = 0;
+let count = 0;
+
+while (true) {
+    let note = parseFloat(prompt("Entrez une note (nombre négatif pour arrêter) :"));
+    
+    if (note < 0) break; // Condition d'arrêt
+    
+    if (!isNaN(note)) {
+        somme += note;
+        count++;
+    } else {
+        alert("Veuillez entrer un nombre valide !");
+    }
+}
+
+if (count > 0) {
+    let moyenne = somme / count;
+    alert("La moyenne est : " + moyenne.toFixed(2));
+} else {
+    alert("Aucune note valide entrée.");
+}
+
+    </script>
+    <hr>
+    <h2>Exercice 2 : Fonction factorielle</h2>
+    <script>
+function factorielle(n) {
+    if (n === 0) return 1; // 0! = 1
+    let resultat = 1;
+    for (let i = 1; i <= n; i++) {
+        resultat *= i;
+    }
+    return resultat;
+}
+
+let nombre = parseInt(prompt("Entrez un nombre entier positif :"));
+if (!isNaN(nombre) && nombre >= 0) {
+    alert("La factorielle de " + nombre + " est " + factorielle(nombre));
+} else {
+    alert("Veuillez entrer un nombre entier positif !");
+}
+</script>

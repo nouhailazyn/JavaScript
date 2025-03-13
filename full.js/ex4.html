@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparer les nombres</title>
+</head>
+<body>
+    
+    <script>
+        // Demander à l'utilisateur de saisir trois valeurs numériques
+        let a, b, c;
+
+        // 1ère valeur
+        do {
+            a = parseFloat(prompt("Entrez la première valeur numérique :"));
+          
+        }while(isNaN(a))
+
+        // 2ème valeur
+        do {
+            b = parseFloat(prompt("Entrez la deuxiéme valeur numérique :"));
+          
+        }while(isNaN(b))
+
+        // 3ème valeur
+        do {
+            c = parseFloat(prompt("Entrez la troixiéme valeur numérique :"));
+          
+        }while(isNaN(c))
+
+        // Comparer les trois variables
+        if (a === b && b === c) {
+            alert("Les trois variables sont identiques.");
+        } else if (a === b || a === c || b === c) {
+            alert("Deux des variables sont de valeurs égales.");
+        } else {
+            alert("Les trois variables sont différentes.");
+        }
+    </script>
+</body>
+</html>

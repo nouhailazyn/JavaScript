@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonjour dans JavaScript</title>
+</head>
+<body>
+   <!-- <h1> Exercice</h1>
+    <p>Exercice 1:</p>
+    <input type="number" id="number1">
+    <input type="number" id="number2">
+    <button onclick="Somme()">Calculer la somme</button>
+    <br>
+    <label id="result">La somme est : </label>
+
+    <script>
+      function Somme() {
+        let number1 = parseInt(document.getElementById("number1").value);
+        let number2 = parseInt(document.getElementById("number2").value);
+        let sum = number1 + number2;
+        document.getElementById("result").innerText = "La somme est : " + sum;
+      }
+    </script> -->
+
+
+
+    <!-- <h1> Exercice</h1>
+    <p>Exercice 2:</p>
+    <label for="num1">Entrez le premier nombre :</label>
+    <input type="num" id="num1" />
+    <br>
+    <label for="number2">Entrez le second nombre :</label>
+    <input type="num" id="num2" />
+    <br>
+    <button onclick="values()">Permuter les valeurs</button>
+  
+    <script>
+      function values() {
+        const num1 = document.getElementById("num1").value;
+        const num2 = document.getElementById("num2").value;
+        document.getElementById("num1").value = num2;
+        document.getElementById("num2").value = num1;
+      }
+    </script> -->
+
+    <!-- <p>Exercice 1:</p>
+    <label for="number">Entrez un nombre :</label>
+    <input type="number" id="number" />
+    <button onclick="calculAbsolute()">Calculer la valeur absolue</button>
+    <p id="result"></p>
+  
+    <script>
+      function calculAbsolute() {
+        let number = document.getElementById("number").value;
+        let absoluteValue = Math.abs(number);
+        document.getElementById("result").innerText = "La valeur absolue est : " + absoluteValue;
+      }
+    </script> -->
+
+    <!-- <h1>exercice 2:</h1>
+    <label for="number1">Entrez le premier nombre :</label>
+    <input type="number" id="number1" />
+    <br><br>
+    <label for="number2">Entrez le second nombre :</label>
+    <input type="number" id="number2" />
+    <button onclick="calculSumAbsolute()">Calculer la somme des valeurs absolues</button>
+    <p id="result"></p>
+  
+    <script>
+      function calculSumAbsolute() {
+        let number1 = document.getElementById("number1").value;
+        let number2 = document.getElementById("number2").value;
+        let sum = Math.abs(number1) + Math.abs(number2);
+        document.getElementById("result").innerText = "La somme des valeurs absolues est : " + sum;
+      }
+    </script> -->
+
+
+
+    <!-- <h1>exercice 3:</h1>
+    <p>Ecrire un programme javascript qui permet de réaliser le calcul selon l'opération choisie</p>
+    <label for="number1">Entrez le premier nombre :</label>
+  <input type="number" id="number1" />
+  <br><br>
+  <label for="number2">Entrez le second nombre :</label>
+  <input type="number" id="number2" />
+  <br><br>
+  <label for="operation">Choisissez une opération :</label>
+  <select id="operation">
+    <option value="add">Addition</option>
+    <option value="subtract">Soustraction</option>
+    <option value="multiply">Multiplication</option>
+    <option value="divide">Division</option>
+  </select>
+  <button onclick="performCalculation()">Calculer</button>
+  <p id="result"></p>
+
+  <script>
+    function performCalculation() {
+      const number1 = parseFloat(document.getElementById("number1").value);
+      const number2 = parseFloat(document.getElementById("number2").value);
+      const operation = document.getElementById("operation").value;
+      let result;
+
+      switch (operation) {
+        case "add":
+          result = number1 + number2;
+          break;
+        case "subtract":
+          result = number1 - number2;
+          break;
+        case "multiply":
+          result = number1 * number2;
+          break;
+        case "divide":
+          if (number2 !== 0) {
+            result = number1 / number2;
+          } else {
+            result = "Erreur: Division par zéro";
+          }
+          break;
+        default:
+          result = "Opération non valide";
+      }
+
+      document.getElementById("result").innerText = "Résultat : " + result;
+    }
+  </script> -->
+
+
+
+<h1>TP N°1 : Les Instructions</h1> 
+  <!-- <h1>Afficher mon nom !</h1> 
+  <script language="JavaScript"> 
+  nom=prompt("quel est votre Nom ?"); //prompt ouvre une boite de dialogue 
+  prenom=prompt("quel est votre Prénom ?"); 
+  document.write("<h2>votre nom est : "+prenom+" "+nom+"</h2>");  
+  // document.write permet décrire dans le document 
+  </script>  -->
+
+  <!-- <script language="JavaScript"> 
+  prem=prompt("Entrer la première note"); 
+  prem=eval(prem); //eval permet d'évaluer la variable prem (renvoie un nombre), et la valeur est remise dans prem
+  deux=prompt("Entrer la deuxième note"); 
+  deux=eval(deux); 
+  trois=prompt("Entrer la troisième note"); 
+  trois=eval(trois); 
+  moy=(prem+deux+trois)/3; 
+  document.write("La moyenne est : "+moy); 
+  </script> -->
+
+  <!-- <h1>Excercice 1</h1>
+  <script language="javascript">
+    base=prompt("Etrer la base b");
+    base=eval(base);
+    hauteur=prompt("Entrer la hauteur h"); 
+    hauteur=eval(hauteur);
+    result=(base*hauteur)/2; 
+    document.write("L'aire du triangle est : "+result); 
+  </script> -->
+
+  <!-- <h1>Excercice 2</h1>
+  <script language="Javascript">
+    const PI=3.14;
+    rayon=prompt("Etrer le rayon r");
+    rayon=eval(rayon);
+    hauteur=prompt("entrer hauteur");
+    hauteur=eval(hauteur);
+    V=PI*(rayon**2)*hauteur;
+    document.write("Volume du cylindre est :" +V);55
+  </script> -->
+
+  <h1>Excercice 1 </h1>
+    <table border="1">
+      <tr >
+        <td colspan="5">Equation ax²+bx+c=0</td>
+      </tr>
+      <tr>
+        <td><label for="">a =</label></td>
+        <td><input type="number" name="numb1" id="a"></td>
+      </tr>
+      <tr>
+        <td><label for="">b =</label></td>
+        <td><input type="number" name="numb2" id="b"></td>
+      </tr>
+      <tr>
+        <td><label for="">c =</label></td>
+        <td><input type="number" name="numb3" id="c"></td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="equationSecondDegre()">Résoudre</button>
+        </td>
+        <td><label id="result"></label></td>
+      </tr>
+    </table>
+    <script language="Javascript">
+      function equationSecondDegre(){
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+        let c = parseFloat(document.getElementById("c").value);
+        if (a === 0 && b === 0 && c === 0){
+          document.getElementById("result").innerText = "infinite de solution";
+        }
+        else if(a === 0 && b === 0 && c !== 0){
+           document.getElementById("result").innerText = "pas de solution réelle";
+        }
+        else{
+          result=Math.pow(b,2)-4*a*c;
+          document.getElementById("result").innerText = "Le discriminant (Δ) est :"+ result;
+          if(result > 0){
+            x1 = (-b + Math.sqrt(result)) / (2 * a);
+            x2 = (-b - Math.sqrt(result)) / (2 * a);
+            document.getElementById("result").innerText = "L'équation a deux solutions réelles distinctes : x1 ="+ x1+ "x2 ="+ x2;
+          } 
+          else if (result == 0){
+            x1 = (-b) / (2 * a);
+            document.getElementById("result").innerText = "L'équation a une solution réelle double : x1 ="+ x1;
+          }
+          else{
+            document.getElementById("result").innerText = "pas de solution réele";
+          }
+        }
+        // document.write("solution est :" + result);
+      }
+    </script>
+    <br>
+    
+
+
+
+    
+    // if (noms.length === 0) {
+      //     alert("Ajoutez d'abord des noms avant de faire un tirage !");
+      //     return;
+      // }

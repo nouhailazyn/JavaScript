@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiplication</title>
+    <style>
+        button{
+            padding: 5px;
+            width: 100px;
+            border: 1px solid lightpink;
+            background-color: lightpink;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="affiche()">Afficher</button>
+    <script>
+        let a = 5;
+        let b = 2;
+        function multiplie(x = 8) {
+            return x * 3;
+        }
+        function affiche() {
+            alert("Résultat de multiplie a est : " + multiplie(a)); 
+            alert("Résultat de multiplie b est : " + multiplie(b)); 
+            alert("Résultat de multiplie sans paramètre : " + multiplie()); 
+        }
+    </script>
+</body>
+</html>

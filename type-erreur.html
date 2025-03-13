@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYPE ERROR</title>
+</head>
+<body>
+    <label for="longueur">Longueur :</label>
+    <input type="text" id="longueur" placeholder="Entrez la longueur">
+    <br><br>
+    <label for="largeur">Largeur :</label>
+    <input type="text" id="largeur" placeholder="Entrez la largeur">
+    <br><br>
+    <button onclick="surfaceRectangle()">Calculer la surface</button>
+    <br><br>
+    <p id="resultat"></p>
+    <script>
+        function surfaceRectangle() {
+            const longueur = document.getElementById('longueur').value;
+            const largeur = document.getElementById('largeur').value;
+            try {
+                const longueurNum = parseFloat(longueur);
+                const largeurNum = parseFloat(largeur);
+                if (isNaN(longueurNum) || isNaN(largeurNum)) {
+                    throw "Les valeurs entrées ne sont pas numériques.";
+                }
+                const surface = longueurNum * largeurNum;
+
+                document.getElementById('resultat').textContent = "La surface du rectangle est : " + surface;
+            } catch (err) {
+                document.getElementById('resultat').textContent = err.message;
+            }
+        }
+    </script>
+</body>
+</html>

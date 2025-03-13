@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function promses</title>
+</head>
+<body>
+    <script>
+        var persons =[{firstName : "Joe", lastName : "John", age: 23},
+                      {firstname : "Ebenez", lastName : "Afisa", age: 25}];
+            function addPerson(person){
+                return new Promise((resolve, reject)=>{
+                setTimeout(()=>{
+                    persons.push(person);
+                    resolve();
+                }, 3000);
+                });
+            }
+            function getPerson(){
+                setTimeout(()=>{
+                    console.log(persons);
+                }, 1000);
+            }
+            addPerson({firstName : "Akram", lastName : "Alaoui", age: 25}
+            ).then(function(){
+            getPerson();
+            }).catch((error)=>{
+            console.log("Error!");
+            });
+    </script>
+
+    
+</body>
+</html>

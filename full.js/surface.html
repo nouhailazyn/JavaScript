@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice surface</title>
+</head>
+<body>
+    <h3>exercice 1:</h3>
+    <input type="number" name="r" id="r">
+    <button onclick="surface()">calculer</button>
+    <br>
+    <label id="S"></label>
+    <script>
+        function surface(){
+            const PI = 3.14;
+            var r = parseInt(document.getElementById("r").value);
+            S = (r**r) * PI;
+            document.getElementById("S").innerText = "La surface de rayon est "+ S;
+        }
+    </script>
+    <h3>exercice 1:</h3>
+     
+</body>
+</html>

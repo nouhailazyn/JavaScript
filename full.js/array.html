@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <!-- <button type="button" onclick=" ">Ajouter nom</button>
+    <button type="button" onclick=" ">Tirage au sort</button>
+    <script>
+        var gagant = new Array (x);
+        nom=prompt("quel est votre Nom ?");
+        let index = Math.random() * gagant.length;
+        for (let x in gagant){
+            gagant.push(x);
+            document.write("Gagant est :" + gagant[index]);
+        }
+    </script> -->
+
+
+    <button onclick="ajuterNom()">Ajouter Nom</button>
+    <button onclick="tirage()">Tirage au Sort</button>
+    <p id="tableau"></p>
+    <p id="gagnant"></p>
+
+    <script>
+        let noms = new Array();
+        function ajuterNom() {
+            for(let x in number){
+                let nom = prompt("Entrez votre nom :");
+                noms.push(nom);
+                document.getElementById("tableau").innerText = "Noms: " + noms.join(", ");
+            }
+        }
+        function tirage() {
+            let gagnant = noms[Math.floor(Math.random() * noms.length)];
+            document.getElementById("gagnant").innerText = "Gagnant est : " + gagnant;
+        }
+    </script>
+
+    <!-- pour afficher un message aprés 3 secondes -->
+    <script>
+        let timeoutId = setInterval(() => 
+        {console.log("Ce messsage s'affiche aprés 3 secondes");}, 1000);
+        clearTimeout(timeoutId);//annuler le délai d'execution
+    </script>
+
+    <!-- Setting an interval that logs "hello" every second -->
+    <script>
+        let intervalId = setInterval(() => {
+            console.log("Hello");}, 1000);
+        // clear the interval after 5 secondes
+        setInterval(() => {
+            clearInterval(intervalId);
+        }, 5000);
+    </script>
+    <script>
+        var persons =[{firstName : "Joe", lastName : "John", age: 23},{firstname : "Ebenez", lastName : "Afisa", age: 25}];
+        function addPerson(person, myCallBack){
+            setTimeout(() => {
+                persons.push(person);
+                myCallBack();
+            }, 3000);
+        }
+        function getPerson(){
+            setTimeout(() => {console.log(persons);
+            }, 1000);
+        }
+        addPerson({firstName : "Akram", lastName : "Alaoui", age: 25}, getPerson);
+        getPerson();
+    </script>
+</body>
+</html>
