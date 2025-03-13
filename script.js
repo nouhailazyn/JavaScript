@@ -35,7 +35,7 @@ console.log(Number.isNaN('nouhaila' - 5))
 console.log(typeof('nouhaila' - 5))
 let zakah = window.prompt();
 console.log('zakah is'+ ' '+ Math.floor(0.025 * zakah));
-let name = 'nouhaila ez-zayany,';
+let name = 'nouhaila ,';
 console.log(name.repeat(2));//répeter le nom
 console.log(name[5]);// index du lettres
 console.log(name.charAt(10));
